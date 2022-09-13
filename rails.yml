@@ -1,0 +1,29 @@
+#
+# Documentation can be found here:
+# https://docs.rubocop.org/rubocop-rails/index.html
+#
+
+require: rubocop-rails
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/migrate/**'
+    - 'db/schema.rb'
+
+Rails/EnvironmentVariableAccess:
+  Enabled: true
+Rails/I18nLocaleTexts:
+  Enabled: false
+Rails/InverseOf:
+  IgnoreScopes: true
+Rails/PluckId:
+  Enabled: true
+Rails/SaveBang:
+  Enabled: true
+Rails/SkipsModelValidations:
+  Enabled: false
+Rails/UnknownEnv:
+  Environments: ['development', 'test', 'production', 'sandbox', 'mirror']

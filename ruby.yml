@@ -1,0 +1,126 @@
+#
+# Documentation can be found here:
+# https://docs.rubocop.org/rubocop/index.html
+#
+
+require:
+  - rubocop-performance
+  - rubocop-minitest
+
+AllCops:
+  NewCops: enable
+
+# -------- Bundler     --------
+
+Bundler/OrderedGems:
+  Enabled: false
+
+# -------- Layout      --------
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_block
+Layout/ClassStructure:
+  Enabled: true
+  ExpectedOrder:
+     - module_inclusion
+     - constants
+     - association
+     - public_attribute_macros
+     - public_delegate
+     - macros
+     - public_class_methods
+     - initializer
+     - public_methods
+     - protected_attribute_macros
+     - protected_methods
+     - private_attribute_macros
+     - private_delegate
+     - private_methods
+Layout/EmptyLineAfterMultilineCondition:
+  Enabled: true
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+Layout/EndOfLine:
+  EnforcedStyle: lf
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+Layout/HashAlignment:
+  EnforcedColonStyle: table
+Layout/LineLength:
+  Max: 80
+Layout/MultilineAssignmentLayout:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+# -------- Metrics     --------
+
+Metrics/AbcSize:
+  Max: 20
+  CountRepeatedAttributes: false
+Metrics/BlockLength:
+  Exclude:
+    - 'lib/tasks/**/*'
+    - 'test/**/*'
+Metrics/ClassLength:
+  CountAsOne: ['array', 'hash', 'heredoc']
+  Exclude:
+    - 'test/**/*'
+Metrics/MethodLength:
+  CountAsOne: ['array', 'hash', 'heredoc']
+Metrics/ModuleLength:
+  CountAsOne: ['array', 'hash', 'heredoc']
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+# -------- Naming      --------
+
+Naming/RescuedExceptionsVariableName:
+  PreferredName: error
+
+# -------- Style       --------
+
+Style/DateTime:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  EnforcedStyle: allowed_in_returns
+Style/FloatDivision:
+  EnforcedStyle: right_coerce
+Style/FormatStringToken:
+  MaxUnannotatedPlaceholdersAllowed: 2
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/HashAsLastArrayItem:
+  EnforcedStyle: no_braces
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  AllowedMethods: ['info', 'debug', 'warn', 'error', 'raise', 'head']
+  AllowedPatterns: ['^assert', '^render', '^redirect', '^send_']
+Style/OptionHash:
+  Enabled: true
+Style/ParallelAssignment:
+  Enabled: false
+Style/StaticClass:
+  Enabled: true
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# -------- Performance --------
+
+Performance/IoReadlines:
+  Enabled: true
+Performance/OpenStruct:
+  Enabled: true
+
+# -------- Minitest    --------
+
+Minitest/MultipleAssertions:
+  Enabled: false
