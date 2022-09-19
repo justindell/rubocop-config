@@ -102,7 +102,7 @@ Style/HashAsLastArrayItem:
   EnforcedStyle: no_braces
 Style/MethodCallWithArgsParentheses:
   Enabled: true
-  AllowedMethods: ['info', 'debug', 'warn', 'error', 'raise', 'head']
+  AllowedMethods: ['info', 'debug', 'warn', 'error', 'raise', 'head', 'puts']
   AllowedPatterns: ['^assert', '^render', '^redirect', '^send_']
 Style/OptionHash:
   Enabled: true
