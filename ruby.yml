@@ -50,6 +50,7 @@ Layout/FirstHashElementLineBreak:
   Enabled: true
 Layout/HashAlignment:
   EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
 Layout/LineLength:
   Max: 80
 Layout/MultilineAssignmentLayout:
