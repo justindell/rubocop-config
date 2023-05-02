@@ -52,7 +52,7 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
 Layout/LineLength:
-  Max: 80
+  Max: 120
 Layout/MultilineAssignmentLayout:
   Enabled: false
 Layout/MultilineMethodCallIndentation:
@@ -112,7 +112,7 @@ Style/ParallelAssignment:
 Style/StaticClass:
   Enabled: true
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  Enabled: false
 
 # -------- Performance --------
 
