@@ -3,7 +3,9 @@
 # https://docs.rubocop.org/rubocop-rails/index.html
 #
 
-require: rubocop-rails
+require:
+  - rubocop-rails
+  - rubocop-factory_bot
 
 AllCops:
   NewCops: enable
