@@ -5,7 +5,6 @@
 
 require:
   - rubocop-rails
-  - rubocop-factory_bot
 
 AllCops:
   NewCops: enable
