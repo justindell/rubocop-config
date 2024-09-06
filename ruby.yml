@@ -24,20 +24,20 @@ Layout/BlockAlignment:
 Layout/ClassStructure:
   Enabled: true
   ExpectedOrder:
-     - module_inclusion
-     - constants
-     - association
-     - public_attribute_macros
-     - public_delegate
-     - macros
-     - public_class_methods
-     - initializer
-     - public_methods
-     - protected_attribute_macros
-     - protected_methods
-     - private_attribute_macros
-     - private_delegate
-     - private_methods
+    - module_inclusion
+    - constants
+    - association
+    - public_attribute_macros
+    - public_delegate
+    - macros
+    - public_class_methods
+    - initializer
+    - public_methods
+    - protected_attribute_macros
+    - protected_methods
+    - private_attribute_macros
+    - private_delegate
+    - private_methods
 Layout/EmptyLineAfterMultilineCondition:
   Enabled: true
 Layout/EmptyLineBetweenDefs:
@@ -51,6 +51,11 @@ Layout/FirstHashElementLineBreak:
 Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
+Layout/IndentationConsistency:
+  Enabled: true
+  EnforcedStyle: normal
+Layout/IndentationWidth:
+  Enabled: false
 Layout/LineLength:
   Max: 120
 Layout/MultilineAssignmentLayout:
@@ -67,23 +72,34 @@ Metrics/AbcSize:
   CountRepeatedAttributes: false
 Metrics/BlockLength:
   Exclude:
-    - 'lib/tasks/**/*'
-    - 'test/**/*'
+    - "lib/tasks/**/*"
+    - "test/**/*"
 Metrics/ClassLength:
-  CountAsOne: ['array', 'hash', 'heredoc']
+  CountAsOne: ["array", "hash", "heredoc"]
   Exclude:
-    - 'test/**/*'
+    - "test/**/*"
 Metrics/MethodLength:
-  CountAsOne: ['array', 'hash', 'heredoc']
+  CountAsOne: ["array", "hash", "heredoc"]
 Metrics/ModuleLength:
-  CountAsOne: ['array', 'hash', 'heredoc']
+  CountAsOne: ["array", "hash", "heredoc"]
 Metrics/ParameterLists:
   CountKeywordArgs: false
 
+# -------- Lint        --------
+
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+Lint/MissingSuper:
+  Enabled: false
+
 # -------- Naming      --------
 
+Naming/PredicateName:
+  Enabled: false
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
+Naming/VariableNumber:
+  Enabled: false
 
 # -------- Style       --------
 
@@ -103,8 +119,10 @@ Style/HashAsLastArrayItem:
   EnforcedStyle: no_braces
 Style/MethodCallWithArgsParentheses:
   Enabled: true
-  AllowedMethods: ['info', 'debug', 'warn', 'error', 'raise', 'head', 'puts']
-  AllowedPatterns: ['^assert', '^render', '^redirect', '^send_']
+  AllowedMethods: ["info", "debug", "warn", "error", "raise", "head", "puts"]
+  AllowedPatterns: ["^assert", "^render", "^redirect", "^send_"]
+Style/MixinGrouping:
+  Enabled: false
 Style/OptionHash:
   Enabled: true
 Style/ParallelAssignment:
