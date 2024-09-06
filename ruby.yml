@@ -89,6 +89,8 @@ Metrics/ParameterLists:
 
 Lint/AmbiguousRegexpLiteral:
   Enabled: false
+Lint/EmptyClass:
+  Enabled: false
 Lint/MissingSuper:
   Enabled: false
 
