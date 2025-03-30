@@ -3,7 +3,7 @@
 # https://docs.rubocop.org/rubocop/index.html
 #
 
-require:
+plugins:
   - rubocop-performance
   - rubocop-minitest
 
