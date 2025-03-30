@@ -3,16 +3,16 @@
 # https://docs.rubocop.org/rubocop-rails/index.html
 #
 
-require:
+plugins:
   - rubocop-rails
 
 AllCops:
   NewCops: enable
   Exclude:
-    - 'bin/**/*'
-    - 'config/**/*'
-    - 'db/migrate/**'
-    - 'db/schema.rb'
+    - "bin/**/*"
+    - "config/**/*"
+    - "db/migrate/**"
+    - "db/schema.rb"
 
 Rails/EnvironmentVariableAccess:
   Enabled: true
@@ -27,4 +27,4 @@ Rails/SaveBang:
 Rails/SkipsModelValidations:
   Enabled: false
 Rails/UnknownEnv:
-  Environments: ['development', 'test', 'production', 'sandbox', 'mirror']
+  Environments: ["development", "test", "production", "sandbox", "mirror"]
