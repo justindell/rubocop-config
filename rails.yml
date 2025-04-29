@@ -5,9 +5,12 @@
 
 plugins:
   - rubocop-rails
+  - rubocop-factory_bot
+
+Rails:
+  Enabled: true
 
 AllCops:
-  NewCops: enable
   Exclude:
     - "bin/**/*"
     - "config/**/*"

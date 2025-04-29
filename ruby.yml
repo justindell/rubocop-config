@@ -7,7 +7,25 @@ plugins:
   - rubocop-performance
   - rubocop-minitest
 
+Bundler:
+  Enabled: true
+Layout:
+  Enabled: true
+Lint:
+  Enabled: true
+Metrics:
+  Enabled: true
+Naming:
+  Enabled: true
+Performance:
+  Enabled: true
+Security:
+  Enabled: true
+Style:
+  Enabled: true
+
 AllCops:
+  SuggestExtensions: true
   NewCops: enable
 
 # -------- Bundler     --------
