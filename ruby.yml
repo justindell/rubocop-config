@@ -114,7 +114,7 @@ Lint/MissingSuper:
 
 # -------- Naming      --------
 
-Naming/PredicateName:
+Naming/PredicateMethod:
   Enabled: false
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
