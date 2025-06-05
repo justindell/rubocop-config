@@ -116,6 +116,8 @@ Lint/MissingSuper:
 
 Naming/PredicateMethod:
   Enabled: false
+Naming/PredicatePrefix:
+  Enabled: false
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
 Naming/VariableNumber:
